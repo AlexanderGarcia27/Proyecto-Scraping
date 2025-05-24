@@ -1,35 +1,37 @@
-# 📄 Proyecto de Web Scraping - Quotes to Scrape
+# Proyecto Web Scraping de Citas 📜  
+Práctica con Cheerio
 
-Este proyecto consiste en un **scraper desarrollado en Node.js** que extrae citas del sitio web [Quotes to Scrape](https://quotes.toscrape.com), y genera archivos en formato JSON, CSV y Excel con la información recolectada.
+Este proyecto está diseñado como una introducción práctica al **web scraping** utilizando herramientas populares en el ecosistema de Node.js. Es ideal para estudiantes que están dando sus primeros pasos en la extracción de datos desde páginas web.
 
-## 🎯 Objetivo
+---
 
-Aplicar conocimientos de JavaScript en el entorno Node.js para:
-- Extraer datos de una página web usando Web Scraping.
-- Manipular los datos obtenidos.
-- Exportar los resultados en distintos formatos: `.json`, `.csv`, y `.xlsx`.
+## Descripción del Proyecto 🗒️
 
-## 🔍 Sitio Web Scrapeado
+Una práctica básica para aprender a realizar **web scraping** utilizando **Cheerio** (para scraping estático).  
+El script extrae citas del sitio [Quotes to Scrape](https://quotes.toscrape.com), y guarda los resultados en archivos JSON, CSV y Excel.
 
-[https://quotes.toscrape.com](https://quotes.toscrape.com)
+Incluye:
+- Extracción del texto de la cita.
+- Autor de la cita.
+- Lista de etiquetas asociadas a cada cita.
+- Conversión de los datos a `.json`, `.csv` y `.xlsx`.
 
-## 📦 Tecnologías / Dependencias
+---
 
-- [`request-promise`](https://www.npmjs.com/package/request-promise) - Para hacer peticiones HTTP.
-- [`cheerio`](https://www.npmjs.com/package/cheerio) - Para parsear el HTML (similar a jQuery).
-- [`json2csv`](https://www.npmjs.com/package/json2csv) - Para convertir datos JSON a CSV.
-- [`xlsx`](https://www.npmjs.com/package/xlsx) - Para generar archivos Excel.
-- `fs` - Módulo nativo de Node.js para leer y escribir archivos.
+## Tecnologías utilizadas 🛠
 
-## 📂 Archivos Generados
+- Node.js
+- Cheerio
+- Request-promise
+- json2csv
+- xlsx
+- fs (nativo de Node.js)
 
-- `quotes.json` – Todas las citas en formato JSON.
-- `quotes.csv` – Citas convertidas a formato CSV.
-- `quotes.xlsx` – Citas exportadas como hoja de cálculo Excel.
+---
 
-## ⚙️ Instalación y ejecución
+## Instalación y Ejecución 🚀
 
-1. Clona este repositorio:
+1. Clona el repositorio:
 
 ```bash
 git clone https://github.com/AlexanderGarcia27/Proyecto-Scraping.git
