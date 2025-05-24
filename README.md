@@ -44,5 +44,6 @@ Equipo:
 git clone https://github.com/AlexanderGarcia27/Proyecto-Scraping.git
 cd Proyecto-Scraping
 npm install
-nmp run start
+npm run start
+
 
