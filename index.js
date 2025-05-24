@@ -36,6 +36,26 @@ let resultadosArray = [];
         fs.writeFileSync('quotes.json', data);
         console.log('ARCHIVO JSON CREADO')
 
+        //csv
+        const fields = ['quote', 'author', 'tags'];
+
+        const jspn2Parse = new Parser({
+            fields: fields,
+            defaultValue: 'No hay información'
+        })
+        const csv = jspn2Parse.parse(resultadosArray);
+        fs.writeFileSync('./quotes.csv', csv, "utf-8");
+        console.log(" - resultados.csv CREADO")
+
+        //Excel
+        const worksheet = XLSX.utils.json_to_sheet(resultadosArray);
+        const workbook = XLSX.utils.book_new()
+        XLSX.utils.book_append_sheet(
+            workbook, worksheet, 'Quotes (Frases) Scrapping');
+
+        XLSX.writeFile(workbook, 'quotes.xlsx');
+        console.log('Archivo de excel creado')
+
     } catch (error) {
         console.error("Error:", error.message);
     }
