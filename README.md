@@ -28,6 +28,15 @@ Incluye:
 - fs (nativo de Node.js)
 
 ---
+## Autores 👨🏾‍💻
+Este proyecto fue desarrollado por estudiantes de la Universidad Tecnológica de la Sierra Hidalguense, como parte de la materia Extracción de Conocimiento en Bases de Datos (Mayo - Agosto 2025).
+
+Equipo:
+👤 Alexander García – @AlexanderGarcia27
+
+👤 Luis Abel Rangel – @20luis20Abel
+
+👤 Luis Enrique Hernandez – @weroo0
 
 ## Instalación y Ejecución 🚀
 
@@ -36,3 +45,5 @@ Incluye:
 ```bash
 git clone https://github.com/AlexanderGarcia27/Proyecto-Scraping.git
 cd Proyecto-Scraping
+npm install
+nmp run start
