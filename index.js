@@ -31,6 +31,11 @@ let resultadosArray = [];
             });
         }
 
+        //JSON
+        let data = JSON.stringify(resultadosArray, null, 2);
+        fs.writeFileSync('quotes.json', data);
+        console.log('ARCHIVO JSON CREADO')
+
     } catch (error) {
         console.error("Error:", error.message);
     }
