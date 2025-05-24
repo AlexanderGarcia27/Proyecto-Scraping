@@ -40,10 +40,9 @@ Equipo:
 
 ## Instalación y Ejecución 🚀
 
-1. Clona el repositorio:
-
 ```bash
 git clone https://github.com/AlexanderGarcia27/Proyecto-Scraping.git
 cd Proyecto-Scraping
 npm install
 nmp run start
+
